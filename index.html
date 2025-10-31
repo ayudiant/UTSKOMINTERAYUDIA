@@ -186,23 +186,55 @@
     </section>
 
     <!-- UTS 2 -->
-    <section id="uts2">
-      <h2>UTS 2 - My Song For You</h2>
-      <h4>"Sorai" by Nadin Amizah</h4>
-      <p>
-        Dari sekian banyak lagu Nadin, <strong>“Sorai”</strong> selalu punya tempat khusus di hati. 
-        Lagu ini terasa seperti pelukan lembut yang mengajak kita berhenti sejenak dan merenung. 
-        Suara Nadin yang hangat berpadu dengan lirik puitis mengingatkanku pada perpisahan yang tetap layak disyukuri.
-      </p>
-      <p>
-        <strong>“Sorai”</strong> bukan hanya tentang kesedihan, tapi juga tentang rasa syukur dan ketenangan dalam menutup bab kehidupan. 
-        Lagu ini mengajarkan bahwa setiap perpisahan membawa ruang untuk versi diri yang lebih kuat dan lembut.
-      </p>
-      <p>
-        Setiap kali aku mendengarnya, rasanya seperti diajak berdamai dengan masa lalu, diri sendiri, dan hal-hal yang tak bisa digenggam. 
-        Lagu ini seperti ucapan terima kasih yang berubah menjadi senyum: bahwa setiap akhir adalah awal dari pertumbuhan baru.
-      </p>
-    </section>
+    <section id="uts2" style="max-width: 800px; margin: 60px auto; padding: 40px; background-color: #f9fbff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.08);">
+  <div style="text-align: center; margin-bottom: 25px;">
+    <h2 style="color: #003366; font-weight: 700; margin-bottom: 10px;">UTS 2 - My Reflection</h2>
+    <h4 style="color: #0056b3; font-style: italic; margin-bottom: 5px;">"Sorai" by Nadin Amizah</h4>
+    <p style="font-weight: 600; color: #333;">Ayudia Nisrina T</p>
+  </div>
+
+  <div style="text-align: justify; line-height: 1.8; color: #222; font-size: 16px;">
+    <p>
+      Dari sekian banyak lagu Nadin yang pernah aku dengar, <em>“Sorai”</em> selalu punya tempat khusus di hati.
+      Lagu ini terasa seperti pelukan yang lembut, cukup untuk membuat kita diam sejenak dan merenung.
+      Suara Nadin yang hangat berpadu dengan liriknya yang puitis membuatku teringat pada perpisahan
+      dan hal-hal yang sudah berlalu, tapi tetap ingin disyukuri.
+    </p>
+
+    <p>
+      Lagu <em>“Sorai”</em> bukan cuma tentang kesedihan atau perpisahan, tapi juga tentang rasa syukur.
+      Tentang bagaimana kita menutup satu bab dengan tenang dan membuka yang baru dengan hati yang lebih lapang.
+      Nadin seperti mengingatkanku bahwa perpisahan bukan akhir dari cerita,
+      tapi bagian dari perjalanan untuk menemukan versi diri kita yang lebih kuat dan lebih lembut sekaligus.
+    </p>
+
+    <p>
+      Setiap kali aku dengar lagu ini, rasanya seperti diajak berdamai dengan masa lalu, dengan diri sendiri,
+      dan dengan segala hal yang tidak bisa lagi kita genggam.
+      <em>“Sorai”</em> terasa seperti ucapan terima kasih yang perlahan berubah menjadi senyum;
+      bahwa dari setiap perpisahan, selalu ada pelajaran kecil yang menuntun kita untuk tumbuh dengan lebih bijak.
+    </p>
+  </div>
+
+  <!-- Tambahan: Input file untuk pemutar lagu -->
+  <div style="text-align: center; margin-top: 30px;">
+    <h4 style="color: #004a99;">Putar Lagu Favoritmu 🎵</h4>
+    <input type="file" accept="audio/*" id="audioInput" style="margin-top: 10px; padding: 8px;">
+    <audio id="audioPlayer" controls style="margin-top: 15px; width: 100%; max-width: 500px;"></audio>
+  </div>
+
+  <script>
+    const input = document.getElementById('audioInput');
+    const player = document.getElementById('audioPlayer');
+    input.addEventListener('change', function() {
+      const file = this.files[0];
+      if (file) {
+        player.src = URL.createObjectURL(file);
+        player.play();
+      }
+    });
+  </script>
+</section>
 
     <!-- UTS 3 -->
     <section id="uts3" style="
@@ -244,7 +276,7 @@
     </p>
 
     <p>
-      Aku menatap layar cukup lama—terlalu lama bahkan—sampai cahaya ponsel padam sendiri.
+      Aku menatap layar cukup lama, menatapnya dengan penuh keraguan. 
       Posisi yang ditawarkan kali ini merupakan posisi yang sebelumnya aku belum pernah coba dan cukup asing untukku.
       Ada rasa ingin mencoba, tapi juga takut gagal. Aku berpikir,
       <em>“Bagaimana kalau aku tidak cukup baik? Bagaimana kalau aku membuat malu diriku sendiri?”</em>
@@ -261,7 +293,7 @@
 
     <p>
       Hari-hari setelahnya tidak mudah. Aku harus beradaptasi, berbicara dengan orang baru, tampil di depan banyak orang.
-      Tapi di sela rasa gugup itu, aku mulai melihat sesuatu yang belum pernah kulihat sebelumnya — ternyata aku bisa.
+      Tapi di sela rasa gugup itu, aku mulai melihat sesuatu yang belum pernah kulihat sebelumnya, ternyata aku bisa.
       Tidak sesempurna yang kubayangkan, tapi cukup untuk membuatku ingin melangkah lagi.
       Waktu berlalu, dan kesempatan demi kesempatan datang.
       Dulu aku akan mundur, tapi kini aku belajar menyambutnya.
