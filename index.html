@@ -216,12 +216,14 @@
     </p>
   </div>
 
-  <!-- Tambahan: Input file untuk pemutar lagu -->
-  <div style="text-align: center; margin-top: 30px;">
-    <h4 style="color: #004a99;">Putar Lagu Favoritmu 🎵</h4>
-    <input type="file" accept="audio/*" id="audioInput" style="margin-top: 10px; padding: 8px;">
-    <audio id="audioPlayer" controls style="margin-top: 15px; width: 100%; max-width: 500px;"></audio>
+ <!-- Pemutar Audio -->
+  <div style="text-align:center; margin-top:30px;">
+    <h4 style="color:#004a99;">🎵 Dengarkan Lagu "Sorai" 🎵</h4>
+    <audio controls style="width:100%; max-width:500px; margin-top:10px;">
+      <source src="audio/sorai.mp3" type="audio/mpeg">
+    </audio>
   </div>
+</section>
 
   <script>
     const input = document.getElementById('audioInput');
