@@ -6,118 +6,144 @@
   <title>Kenneth Moses Saragih - II2100</title>
 
   <style>
+    /* === Reset & Font === */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      background-color: #f5f7fa;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #e6f0ff 0%, #ffffff 100%);
       color: #222;
     }
 
-    /* Sidebar */
-    .sidebar {
-      position: fixed;
+    /* === Navigation Bar === */
+    nav {
+      background: #0a2e5c;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      position: sticky;
       top: 0;
-      left: 0;
-      width: 240px;
-      height: 100%;
-      background: #ffffff;
-      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+      z-index: 10;
+    }
+
+    nav h1 {
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd966;
+    }
+
+    /* === Header === */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h2 {
+      font-size: 32px;
+      color: #0a2e5c;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #555;
+    }
+
+    /* === Content === */
+    main {
+      max-width: 900px;
+      margin: auto;
       padding: 20px;
     }
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-      margin-top: 60px;
-    }
-
-    .sidebar li {
-      margin: 16px 0;
-    }
-
-    .sidebar a {
-      text-decoration: none;
-      color: #444;
-      font-weight: 500;
-    }
-
-    .sidebar a:hover {
-      color: #0b79d0;
-    }
-
-    /* Main content */
-    .main {
-      margin-left: 270px;
-      padding: 40px;
-    }
-
-    .header {
-      background: #ffffff;
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-    }
-
-    .header h1 {
-      margin: 10px 0;
-      color: #1e293b;
-    }
-
-    .header p {
-      color: #555;
-      margin: 6px 0;
-    }
-
     section {
-      background: #ffffff;
+      background: #fff;
       border-radius: 12px;
-      padding: 25px 30px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      padding: 30px;
       margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
     }
 
-    h2 {
-      color: #0b79d0;
-      border-bottom: 2px solid #d8e3f0;
-      padding-bottom: 5px;
+    section:hover {
+      transform: translateY(-3px);
     }
 
-    h4 {
+    section h2 {
+      color: #0a2e5c;
+      border-bottom: 3px solid #c9defd;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+    }
+
+    section h4 {
       margin-top: 15px;
       color: #333;
     }
 
+    section p {
+      line-height: 1.6;
+      color: #444;
+      margin-top: 10px;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      color: #777;
+      padding: 25px;
+      color: #666;
       font-size: 0.9em;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 700px) {
+      nav ul { flex-direction: column; gap: 10px; }
+      header h2 { font-size: 26px; }
+      section { padding: 20px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
+  <!-- Navigation Bar -->
+  <nav>
+    <h1>Kenneth Moses</h1>
     <ul>
-      <li><a href="#uts1">UTS 1 - All About Me</a></li>
-      <li><a href="#uts2">UTS 2 - My Song For You</a></li>
-      <li><a href="#uts3">UTS 3 - My Stories For You</a></li>
-      <li><a href="#uts4">UTS 4 - My SHAPE</a></li>
-      <li><a href="#uts5">UTS 5 - My Personal Review</a></li>
+      <li><a href="#uts1">UTS 1</a></li>
+      <li><a href="#uts2">UTS 2</a></li>
+      <li><a href="#uts3">UTS 3</a></li>
+      <li><a href="#uts4">UTS 4</a></li>
+      <li><a href="#uts5">UTS 5</a></li>
     </ul>
-  </aside>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h2>Kenneth Moses Saragih</h2>
+    <p>K1 - NIM 18224093</p>
+    <p>Selamat datang di Repository Tugas II2100 Komunikasi Interpersonal dan Publik.</p>
+  </header>
 
   <!-- Main Content -->
-  <div class="main">
-    <header class="header">
-      <h1>Kenneth Moses Saragih</h1>
-      <p>K1 - NIM 18224093</p>
-      <p>Selamat datang di Repository Tugas II2100 Komunikasi Interpersonal dan Publik.</p>
-    </header>
-
+  <main>
     <section id="uts1">
       <h2>UTS 1 - All About Me</h2>
       <h4>Perkenalan</h4>
@@ -144,12 +170,11 @@
       <h2>UTS 5 - My Personal Review</h2>
       <p>Review pribadi terhadap perjalanan akademik dan rencana ke depan dalam studi serta kehidupan sosial.</p>
     </section>
+  </main>
 
-    <footer>
-      <p>&copy; 2025 Kenneth Moses Saragih</p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 Kenneth Moses Saragih</p>
+  </footer>
 
 </body>
 </html>
-
