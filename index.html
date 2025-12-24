@@ -29,168 +29,155 @@
       z-index: 10;
     }
 
-    nav h1 {
-      font-size: 20px;
-      letter-spacing: 0.5px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffd966;
-    }
+    nav h1 { font-size: 20px; letter-spacing: 0.5px; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav a { color: #ffffff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #ffd966; }
 
     /* === Header === */
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
+    header { text-align: center; padding: 60px 20px 40px; }
+    header h2 { font-size: 32px; color: #0a2e5c; margin-bottom: 8px; }
+    header p { color: #555; font-size: 16px; }
 
-    header h2 {
-      font-size: 32px;
-      color: #0a2e5c;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      color: #555;
-      font-size: 16px;
-    }
-
-    /* === Content === */
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+    /* === Content Layout === */
+    main { max-width: 900px; margin: auto; padding: 20px; }
 
     section {
       background: #fff;
       border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 30px;
+      padding: 35px;
+      margin-bottom: 40px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
       text-align: justify;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
     }
 
     section h2 {
       color: #0a2e5c;
       border-bottom: 3px solid #c9defd;
       padding-bottom: 6px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    /* === UAS 1 - Health Focus Styles === */
+    .uas-intro-card {
+      background: #f0f7ff;
+      border-radius: 15px;
+      padding: 25px;
+      border-left: 8px solid #0a2e5c;
+      margin-bottom: 30px;
+    }
+
+    .challenge-item {
+      display: flex;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid #e1e8f0;
+      padding: 18px;
+      border-radius: 10px;
       margin-bottom: 15px;
-      font-size: 22px;
     }
 
-    section h3 {
-      color: #004a99;
-      font-size: 18px;
-      margin-top: 15px;
-      margin-bottom: 10px;
+    .challenge-number {
+      background: #0a2e5c;
+      color: white;
+      min-width: 110px;
+      padding: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+      margin-right: 15px;
+      font-size: 0.8rem;
     }
 
-    section h4 {
-      color: #333;
-      font-weight: 600;
-      margin-top: 12px;
-      margin-bottom: 8px;
-    }
-
-    section p {
-      color: #444;
-      margin-bottom: 15px;
-    }
-
-    /* === UAS 1 Specific Styles === */
-    .uas-subtitle {
-      color: #888;
-      font-size: 1.1rem;
-      margin-top: -10px;
-      margin-bottom: 25px;
-      display: block;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin: 25px 0;
-    }
-
-    .stat-box {
-      background: #f8f9fa;
-      border: 1px solid #e9ecef;
-      border-radius: 12px;
-      padding: 20px;
+    /* === UAS 2 - My Opinions Styles (Ref: image_46177c & image_461722) === */
+    .opinion-header-banner {
+      background: linear-gradient(135deg, #3f51b5 0%, #1a237e 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
       text-align: left;
     }
 
-    .stat-box h4 {
-      color: #1a2a44;
-      font-size: 1.3rem;
-      margin-top: 0;
-      margin-bottom: 10px;
+    .opinion-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 30px;
     }
 
-    .stat-box p {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 0;
-    }
-
-    .info-box {
-      background: #f1f4f8;
+    .opinion-card {
+      background: #fff;
+      border: 1px solid #eee;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .opinion-badge {
+      background: #e8eaf6;
+      color: #3f51b5;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .strategy-banner {
+      background: #1a237e;
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
       margin-top: 20px;
     }
 
-    .info-box p {
-      font-size: 0.95rem;
-      margin-bottom: 0;
+    .strategy-item h4 { font-size: 1.2rem; color: #fff; margin-bottom: 5px; }
+    .strategy-item p { font-size: 0.8rem; opacity: 0.8; line-height: 1.4; }
+
+    .integrated-view {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 15px;
     }
 
-    /* === Section Variasi Warna === */
-    #uts3, #uts4 {
-      background: #f9fbff;
+    .view-row {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-style: italic;
+      font-size: 0.9rem;
+      border: 1px solid #f0f0f0;
     }
 
-    #uts4 {
-      background: linear-gradient(135deg, #eaf3ff 0%, #ffffff 100%);
+    .icon-circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
     }
 
     /* === Footer === */
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #666;
-      font-size: 0.9em;
-      border-top: 1px solid #ddd;
-      margin-top: 40px;
-    }
+    footer { text-align: center; padding: 25px; color: #666; font-size: 0.9em; border-top: 1px solid #ddd; margin-top: 40px; }
 
-    /* === Responsive === */
     @media (max-width: 700px) {
-      nav { flex-direction: column; text-align: center; padding: 20px; }
-      nav ul { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
-      header h2 { font-size: 26px; }
-      section { padding: 20px; }
-      .stats-grid { grid-template-columns: 1fr; }
+      .opinion-grid, .strategy-grid { grid-template-columns: 1fr; }
+      nav { flex-direction: column; padding: 20px; }
+      nav ul { flex-wrap: wrap; justify-content: center; margin-top: 10px; }
     }
   </style>
 </head>
@@ -205,6 +192,7 @@
       <li><a href="#uts4">UTS 4</a></li>
       <li><a href="#uts5">UTS 5</a></li>
       <li><a href="#uas1">UAS 1</a></li>
+      <li><a href="#uas2">UAS 2</a></li>
     </ul>
   </nav>
 
@@ -217,234 +205,95 @@
   <main>
     <section id="uts1">
       <h2>UTS 1 - All About Me</h2>
-      <h4>Perkenalan</h4>
-      <p>
-        Halo semua! Perkenalkan, aku <strong>Ayudia Nisrina Tsabitah</strong>, mahasiswa semester 3 program studi Teknik Pangan di ITB. 
-        Aku adalah orang yang memiliki rasa ingin tahu besar terhadap banyak hal. Hal ini terbukti dengan aku yang suka mengeksplor 
-        berbagai hal baru di kampus. Perjalananku dimulai dari masa TPB dengan mengikuti kepanitiaan pusat, yaitu TPB CUP hingga 
-        OSKM 2025. Selain itu, aku juga mulai melakukan pengabdian masyarakat melalui <em>Skhole ITB-Mengajar</em>.
-      </p>
-      <p>
-        Buatku, mengajar bukan sekadar berbagi pengetahuan, tapi juga menyampaikan makna dan membangun koneksi. 
-        Dari setiap pengalaman itu, aku belajar banyak tentang cara berinteraksi, beradaptasi, dan menyampaikan ide.
-      </p>
-      <p>
-        <em>Selamat datang di ceritaku yang masih terus berkembang ✨</em>
-      </p>
-    </section>
-
-    <section id="uts2" style="max-width: 800px; margin: 60px auto; padding: 40px; background-color: #f9fbff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.08);">
-      <div style="text-align: center; margin-bottom: 25px;">
-        <h2 style="color: #003366; font-weight: 700; margin-bottom: 10px;">UTS 2 - My Reflection</h2>
-        <h4 style="color: #0056b3; font-style: italic; margin-bottom: 5px;">"Sorai" by Nadin Amizah</h4>
-        <p style="font-weight: 600; color: #333;">Ayudia Nisrina T</p>
-      </div>
-
-      <div style="text-align: justify; line-height: 1.8; color: #222; font-size: 16px;">
-        <p>
-          Dari sekian banyak lagu Nadin yang pernah aku dengar, <em>“Sorai”</em> selalu punya tempat khusus di hati.
-          Lagu ini terasa seperti pelukan yang lembut, cukup untuk membuat kita diam sejenak dan merenung.
-          Suara Nadin yang hangat berpadu dengan liriknya yang puitis membuatku teringat pada perpisahan
-          dan hal-hal yang sudah berlalu, tapi tetap ingin disyukuri.
-        </p>
-
-        <p>
-          Lagu <em>“Sorai”</em> bukan cuma tentang kesedihan atau perpisahan, tapi juga tentang rasa syukur.
-          Tentang bagaimana kita menutup satu bab dengan tenang dan membuka yang baru dengan hati yang lebih lapang.
-          Nadin seperti mengingatkanku bahwa perpisahan bukan akhir dari cerita,
-          tapi bagian dari perjalanan untuk menemukan versi diri kita yang lebih kuat dan lebih lembut sekaligus.
-        </p>
-
-        <p>
-          Setiap kali aku dengar lagu ini, rasanya seperti diajak berdamai dengan masa lalu, dengan diri sendiri,
-          dan dengan segala hal yang tidak bisa lagi kita genggam.
-          <em>“Sorai”</em> terasa seperti ucapan terima kasih yang perlahan berubah menjadi senyum;
-          bahwa dari setiap perpisahan, selalu ada pelajaran kecil yang menuntun kita untuk tumbuh dengan lebih bijak.
-        </p>
-      </div>
-
-      <div style="text-align:center; margin-top:30px;">
-        <h4 style="color:#004a99;">🎵 Dengarkan Lagu "Sorai" 🎵</h4>
-        <audio controls style="width:100%; max-width:500px; margin-top:10px;">
-          <source src="audio/sorai.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-    </section>
-
-    <section id="uts3">
-      <div style="text-align: center; margin-bottom: 25px;">
-        <h2 style="color: #003366; font-weight: 700; margin-bottom: 10px;">UTS 3 - My Stories For You</h2>
-        <h4 style="color: #0056b3; font-style: italic; margin-bottom: 5px;">Memilih untuk Mulai</h4>
-        <p style="font-weight: 600; color: #333;">Ayudia Nisrina T</p>
-      </div>
-
-      <div style="text-align: justify; line-height: 1.8; color: #222; font-size: 16px;">
-        <p>
-          Kelas 11 merupakan sebuah babak baru yang terasa hangat namun sekaligus penuh tantangan,
-          seperti tengah berada di jembatan antara siapa kita kemarin dan siapa kita esok.
-          Di sini, kita mulai tidak sekadar menjalani rutinitas belajar, tetapi juga mulai mengenal minat,
-          menjalin relasi yang lebih dalam, dan menghadapi pilihan-pilihan yang sedikit lebih besar dari sebelumnya.
-          Aku ingat dengan jelas malam itu, malam ketika pesan singkat masuk ke ponselku:
-          <em>“Aku mau menawarkan kamu posisi di suatu acara. Mau diambil atau tidak?”</em>
-        </p>
-
-        <p>
-          Aku menatap layar cukup lama, menatapnya dengan penuh keraguan. 
-          Posisi yang ditawarkan kali ini merupakan posisi yang sebelumnya aku belum pernah coba dan cukup asing untukku.
-          Ada rasa ingin mencoba, tapi juga takut gagal. Aku berpikir,
-          <em>“Bagaimana kalau aku tidak cukup baik? Bagaimana kalau aku membuat malu diriku sendiri?”</em>
-          Aku adalah seseorang yang ingin mencoba banyak hal, tapi di saat yang sama aku bukan tipe yang berani mengambil langkah pertama.
-          Bagiku, ada orang yang memiliki kemampuan yang lebih baik untuk posisi itu dibandingkan diriku.
-        </p>
-
-        <p>
-          Aku sempat membagikan apa yang aku rasakan ke ibuku.
-          <em>“Kamu tidak akan tahu apa yang bisa kamu capai kalau terus menunggu siap.”</em>
-          Kalimat itu terdengar sederhana, tapi membekas hingga sekarang.
-          Kalimat sederhana itu menggerakkan diriku untuk mengiyakan tawaran di ponselku.
-        </p>
-
-        <p>
-          Hari-hari setelahnya tidak mudah. Aku harus beradaptasi, berbicara dengan orang baru, tampil di depan banyak orang.
-          Tapi di sela rasa gugup itu, aku mulai melihat sesuatu yang belum pernah kulihat sebelumnya, ternyata aku bisa.
-          Tidak sesempurna yang kubayangkan, tapi cukup untuk membuatku ingin melangkah lagi.
-          Waktu berlalu, dan kesempatan demi kesempatan datang.
-          Dulu aku akan mundur, tapi kini aku belajar menyambutnya.
-          Ternyata keberanian bukan soal hilangnya rasa takut, tapi soal memilih tetap melangkah meski takut itu masih ada.
-        </p>
-      </div>
-    </section>
-
-    <section id="uts4">
-      <h2 style="color: #003366; font-weight: 700; text-align: center;">UTS 4 - My SHAPE</h2>
-      <hr style="border: 1.5px solid #007BFF; margin-bottom: 25px; width: 80%; margin-left: auto; margin-right: auto;">
-
-      <h3 style="color: #004a99; text-align: center;">SHAPE Framework</h3>
-
-      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #007BFF; text-align: justify;">
-        <h4 style="color: #0056b3;">S - Spiritual Gifts / Strengths (Karunia / Kekuatan)</h4>
-        <p><strong>Rasa ingin tahu yang tinggi:</strong> Aku memiliki kecenderungan alami untuk mempertanyakan 'mengapa' dan 'bagaimana' di balik segala hal, menjadikan proses belajar sebagai sumber energi.</p>
-        <p><strong>Kemampuan mengajar atau membimbing orang lain:</strong> Aku sangat menghargai kesempatan untuk berbagi wawasan dan menjadi katalis pemahaman bagi orang lain, menunjukkan bahwa kontribusi yang berarti tidak selalu harus yang paling terlihat.</p>
-        <p><strong>Ketelitian dalam berpikir dan bertindak:</strong> Pendekatan kerja aku didasarkan pada analisis mendalam dan ketelitian yang tinggi, memastikan hasil yang presisi dan berkualitas, bukan asal selesai.</p>
-      </div>
-
-      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #3399ff; text-align: justify;">
-        <h4 style="color: #0056b3;">H - Heart (Minat, Nilai, Kepedulian)</h4>
-        <p><strong>Nilai kejujuran dan integritas:</strong> Aku berpegang teguh pada prinsip integritas. Setiap ucapan dan tindakan didasarkan pada keyakinan personal yang mendalam, bukan untuk mencari persetujuan atau pengakuan eksternal.</p>
-        <p><strong>Nilai pertumbuhan pribadi (growth mindset):</strong> Aku percaya dengan aktif dalam pembelajaran dan pengembangan merupakan jalan untuk meningkatkan kualitas karakter dan keterampilan.</p>
-        <p><strong>Empati atau kepekaan terhadap orang lain:</strong> Aku memiliki kemampuan mendengarkan yang aktif dan empati yang kuat. Hal ini mendorongku untuk memahami perspektif orang lain dan berkontribusi secara nyata.</p>
-      </div>
-
-      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #66b2ff; text-align: justify;">
-        <h4 style="color: #0056b3;">A - Abilities (Kemampuan Andal)</h4>
-        <p><strong>Kemampuan komunikasi publik:</strong> Aku mampu berbicara di depan banyak orang dengan memadukan kepercayaan diri, kejelasan, dan daya tarik interpersonal.</p>
-        <p><strong>Leadership / Kepemimpinan:</strong> Aku punya keahlian dalam memimpin sebuah tim kecil, membagi tugas, mengatur jadwal, dan memastikan setiap orang tahu perannya.</p>
-        <p><strong>Kemampuan adaptabilitas / fleksibilitas:</strong> Mampu beradaptasi saat situasi berubah, menghadapi tantangan baru, dan belajar cepat dari kondisi tak terduga.</p>
-      </div>
-
-      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #99ccff; text-align: justify;">
-        <h4 style="color: #0056b3;">P - Personality (Gaya Kerja & Kolaborasi)</h4>
-        <p><strong>Struktur:</strong> Aku suka merencanakan langkah, menyusun tugas, mengatur prioritas, serta memastikan setiap anggota tim memahami perannya.</p>
-        <p><strong>Kolaboratif dan Suportif:</strong> Aku nyaman bekerja dalam tim, mendengar pendapat orang lain, dan menciptakan suasana yang bersahabat agar ide-ide bisa muncul secara terbuka.</p>
-        <p><strong>Pembelajar Sepanjang Hayat:</strong> Aku senang mengeksplorasi berbagai topik dan terus merasa bersemangat saat belajar, menikmati setiap proses pembelajaran yang datang.</p>
-      </div>
-
-      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #cce5ff; text-align: justify;">
-        <h4 style="color: #0056b3;">E - Experiences (Pengalaman Pembentuk)</h4>
-        <p><strong>Organisasi:</strong> Organisasi sebagai tempat aku berkiprah memfasilitasi saya untuk memperoleh banyak pengalaman langsung.</p>
-        <p><strong>Kepanitiaan:</strong> Aku berpengalaman dalam merancang, mengorganisasi, dan melaksanakan proyek atau acara, didukung oleh keterlibatan aku dalam berbagai posisi kepanitiaan.</p>
-        <p><strong>Kegagalan:</strong> Aku pernah menghadapi kegagalan. Hal ini berfungsi sebagai titik balik, mengajarkanku untuk melihatnya bukan sebagai akhir, melainkan sebagai awal dari pembelajaran yang mendalam.</p>
-      </div>
-
-      <div style="text-align: justify; line-height: 1.8; color: #222; font-size: 16px; margin-top: 35px;">
-        <h3 style="color: #222; margin-bottom: 10px; text-align: center;">Piagam Diri (Self-Charter)</h3>
-        <p>
-          Aku berkomitmen untuk menggunakan <strong>Rasa Ingin Tahu yang Tinggi (S)</strong> dan
-          <strong>Ketelitian dalam Berpikir dan Bertindak (S)</strong> sebagai fondasi untuk belajar dan menganalisis masalah secara mendalam.
-          Dengan berpegang teguh pada nilai <strong>Kejujuran dan Integritas (H)</strong>,
-          aku mendedikasikan diri untuk berkontribusi nyata melalui
-          <strong>Kemampuan Mengajar dan Membimbing (S)</strong> serta
-          <strong>Empati terhadap Orang Lain (H)</strong>, menggunakan
-          <strong>Adaptabilitas/Fleksibilitas (A)</strong> dan semangat
-          <strong>Pembelajar Sepanjang Hayat (P)</strong> untuk menghadapi setiap perubahan dan tantangan.
-        </p>
-
-        <p>
-          Misi hidupku adalah menggunakan kemampuan <strong>Leadership/Kepemimpinan (A)</strong> dan
-          <strong>Struktur (P)</strong> untuk merancang dan menggerakkan ekosistem kolaborasi yang suportif
-          (<strong>Kolaboratif dan Suportif (P)</strong>) dan mendorong
-          <strong>Pertumbuhan Pribadi (H)</strong>.
-        </p>
-
-        <h3 style="color: #222; margin-top: 30px; margin-bottom: 10px; text-align: center;">Identitas Naratif</h3>
-        <p>
-          Ceritaku adalah tentang menjadi bagian dari <strong>Organisasi (E)</strong> dan
-          <strong>Kepanitiaan (E)</strong>, merencanakan langkah secara terstruktur
-          (<strong>Struktur (P)</strong>), dan belajar banyak hal.
-          Namun, rasa takut akan ketidaksempurnaan hasil sering membayangi,
-          menyebabkan aku terlalu fokus pada proses dan kurang berani mengambil risiko.
-        </p>
-
-        <p>
-          Ceritaku bukan lagi tentang menghindari kesalahan, ini tentang belajar dari
-          <strong>Kegagalan (E)</strong>. Aku menemukan bahwa <strong>Ketelitian</strong> dan
-          <strong>Struktur</strong> adalah alat, bukan borgol, yang memampukanku untuk memimpin tim kecil
-          dengan efektif (<strong>Leadership (A)</strong>) dan beradaptasi saat situasi berubah.
-          Pengalaman dalam <strong>Organisasi (E)</strong> dan <strong>Kepanitiaan (E)</strong> mengajarkanku bahwa
-          <strong>Rasa Ingin Tahu (S)</strong> yang dipadukan dengan <strong>Empati (H)</strong>
-          menciptakan dampak yang berarti. Aku adalah seorang pembelajar sepanjang hayat yang tidak hanya mencari
-          jawaban, tetapi juga menjadi katalisator bagi pemahaman orang lain.
-        </p>
-      </div>
-    </section>
-
-    <section id="uts5">
-      <h2>UTS 5 - My Personal Review</h2>
-      <p>
-        Sebuah refleksi terhadap perjalanan akademik dan rencana ke depan dalam studi serta kehidupan sosial. 
-        Aku berusaha untuk tetap konsisten belajar, menjaga keseimbangan, dan tumbuh bersama lingkungan yang mendukung.
-      </p>
+      <p>Halo semua! Perkenalkan, aku <strong>Ayudia Nisrina Tsabitah</strong>, mahasiswa semester 3 Teknik Pangan ITB...</p>
     </section>
 
     <section id="uas1">
-        <h2>💡 UAS 1 - My Concepts</h2>
-        <span class="uas-subtitle">Masalah Kesehatan Global</span>
+        <h2>💡 UAS 1 - Global Health Awareness</h2>
+        <div class="uas-intro-card">
+            <h3>My Masterpiece: Resiliensi Kesehatan Global</h3>
+            <p>Kesehatan global adalah masalah sistemik yang mencakup tantangan akses, stabilitas sistem kesehatan, dan daya beli masyarakat.</p>
+        </div>
+        <div class="challenge-item">
+            <div class="challenge-number">4,5 MILIAR</div>
+            <div class="challenge-text"><p>Penduduk bumi belum terlayani layanan kesehatan dasar secara penuh pada 2021.</p></div>
+        </div>
+        <div class="challenge-item">
+            <div class="challenge-number">2 MILIAR</div>
+            <div class="challenge-text"><p>Orang menghadapi beban finansial berat akibat biaya kesehatan mandiri.</p></div>
+        </div>
+        <p style="font-size: 0.8rem; color: #888;">📌 Sumber: WHO & Bank Dunia (2023)</p>
+    </section>
 
-        <h3>My Masterpiece: Memahami Masalah Kesehatan Global</h3>
-        <p>
-            Masalah kesehatan global mencakup berbagai tantangan kesehatan yang memengaruhi populasi di banyak negara, termasuk penyakit menular (seperti COVID-19, HIV/AIDS, malaria, TBC), penyakit tidak menular (jantung, diabetes, kanker), kesehatan ibu-anak, serta akses layanan kesehatan. Salah satu aspek krusial adalah akses terhadap layanan kesehatan, di mana banyak negara berkembang masih memiliki fasilitas dan tenaga medis yang terbatas. Selain itu, biaya kesehatan yang tinggi dapat membuat keluarga jatuh miskin, dan tantangan ini diperburuk oleh faktor perubahan iklim, konflik, serta ketimpangan ekonomi.
+    <section id="uas2">
+        <h2>🟣 UAS 2 - My Opinions</h2>
+        
+        <div class="opinion-header-banner">
+            <h3 style="color: white; margin-bottom: 10px;">Kesehatan: Masalah Sistem, Bukan Sekadar "Kurang Obat"</h3>
+            <p style="font-size: 0.95rem; opacity: 0.9;">
+                Dunia modern memiliki teknologi medis canggih, namun ketimpangan tetap terjadi akibat kegagalan membangun sistem yang adil, terkoordinasi, dan adaptif.
+            </p>
+        </div>
+
+        <p style="margin-bottom: 25px;">
+            Menurut saya, opini matang harus beranjak dari tiga hal: <strong>data, nilai, dan pengalaman</strong>. Isu kesehatan global bukan sekadar angka statistik, melainkan tentang kehidupan nyata manusia yang terdampak.
         </p>
 
-        <div class="stats-grid">
-            <div class="stat-box">
-                <h4>4,5 Miliar Orang</h4>
-                <p>Sekitar 50% penduduk bumi belum terlayani oleh layanan kesehatan dasar secara penuh hingga tahun 2021.</p>
+        <div class="opinion-grid">
+            <div class="opinion-card">
+                <div class="opinion-badge">1</div>
+                <h4 style="color: #1a237e;">Ketimpangan Akses Informasi</h4>
+                <p style="font-size: 0.85rem; color: #555;">Masalah utama terletak pada ketidaksinkronan distribusi data kesehatan antara negara maju dan berkembang yang berujung pada kebijakan yang reaktif.</p>
             </div>
-            <div class="stat-box">
-                <h4>2 Miliar Orang</h4>
-                <p>Menghadapi beban finansial karena biaya kesehatan yang mendorong ratusan juta orang ke jurang kemiskinan setiap tahun.</p>
-            </div>
-            <div class="stat-box">
-                <h4>38 Juta Orang</h4>
-                <p>Jumlah penderita HIV/AIDS secara global yang memerlukan akses merata terhadap terapi antiretroviral.</p>
+            <div class="opinion-card">
+                <div class="opinion-badge">2</div>
+                <h4 style="color: #1a237e;">Teknologi Sebagai Alat Koreksi</h4>
+                <p style="font-size: 0.85rem; color: #555;">Inovasi digital bukan sekadar simbol kemajuan, tapi alat koreksi atas kegagalan sistem manusia dalam mendistribusikan layanan secara merata.</p>
             </div>
         </div>
 
-        <div class="info-box">
-            <p>📌 <strong>Sumber Data</strong></p>
-            <p>Statistik cakupan layanan kesehatan berasal dari <em>Tracking Universal Health Coverage: 2023 Global Monitoring Report</em> oleh WHO dan World Bank. Data ini menekankan perlunya percepatan target SDG 3.8 mengenai Universal Health Coverage (UHC).</p>
+        <div class="strategy-banner">
+            <h4 style="border-left: 4px solid #ffd966; padding-left: 10px;">Langkah Strategis Perubahan</h4>
+            <div class="strategy-grid">
+                <div class="strategy-item">
+                    <h4>01</h4>
+                    <p><strong>Pergeseran Paradigma:</strong> Dari penanganan reaktif menjadi proaktif melalui penguatan sistem primer.</p>
+                </div>
+                <div class="strategy-item">
+                    <h4>02</h4>
+                    <p><strong>Integrasi Data:</strong> Menghubungkan fasilitas kesehatan lokal dengan jaringan kebijakan global secara real-time.</p>
+                </div>
+                <div class="strategy-item">
+                    <h4>03</h4>
+                    <p><strong>Tujuan Kemanusiaan:</strong> Memastikan teknologi selalu dilandasi hak asasi, bukan sekadar profit.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="info-box" style="background: #fff8e1; border-left: 5px solid #ffc107;">
-            <p>✨ <strong>Kesimpulan Konsep</strong></p>
-            <p>Masalah kesehatan global tidak hanya berdampak pada angka harapan hidup, tetapi juga pada produktivitas ekonomi dan stabilitas sosial suatu negara. Memahami konsep ini membantu kita melihat arah solusi mulai dari perlindungan sosial hingga investasi sistem kesehatan primer.</p>
+        <div class="integrated-view">
+            <h4 style="text-align: center; margin-bottom: 20px; letter-spacing: 1px; color: #1a237e;">PANDANGAN TERINTEGRASI</h4>
+            <div class="view-row">
+                <div class="icon-circle" style="background: #e91e63;"></div>
+                <span>"Hati (Nilai) harus mendahului penerapan teknologi medis."</span>
+            </div>
+            <div class="view-row">
+                <div class="icon-circle" style="background: #3f51b5;"></div>
+                <span>"Pikiran (Data) harus menjadi alat untuk mencapai keadilan akses."</span>
+            </div>
+            <div class="view-row">
+                <div class="icon-circle" style="background: #00c853;"></div>
+                <span>"Tenaga (Sumber Daya) harus dikelola dengan bijak dan berkelanjutan."</span>
+            </div>
+            <p style="font-size: 0.8rem; text-align: center; margin-top: 15px; color: #777; border-top: 1px dashed #ccc; padding-top: 10px;">
+                Opini yang baik adalah opini yang <strong>kuat karena data</strong> dan <strong>lentur karena mau mendengar</strong>.
+            </p>
         </div>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 Ayudia Nisrina Tsabitah</p>
+    <p>&copy; 2025 Ayudia Nisrina Tsabitah | II2100</p>
   </footer>
 
 </body>
