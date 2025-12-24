@@ -116,7 +116,7 @@
       margin-bottom: 15px;
     }
 
-    /* === UAS 1 & 2 Additional Styles === */
+    /* === UAS 1 Specific Styles === */
     .uas-subtitle {
       color: #888;
       font-size: 1.1rem;
@@ -141,23 +141,28 @@
     }
 
     .stat-box h4 {
-      color: #0a2e5c;
-      font-size: 1.4rem;
-      margin-bottom: 8px;
+      color: #1a2a44;
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 10px;
     }
 
-    .opinion-card {
-      background: #f0f7ff;
-      border-left: 5px solid #0a2e5c;
+    .stat-box p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0;
+    }
+
+    .info-box {
+      background: #f1f4f8;
       padding: 20px;
-      border-radius: 0 12px 12px 0;
-      margin-bottom: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
 
-    .opinion-card h5 {
-      color: #004a99;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
+    .info-box p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
     }
 
     /* === Section Variasi Warna === */
@@ -181,10 +186,11 @@
 
     /* === Responsive === */
     @media (max-width: 700px) {
-      nav { flex-direction: column; padding: 20px; }
+      nav { flex-direction: column; text-align: center; padding: 20px; }
       nav ul { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
       header h2 { font-size: 26px; }
       section { padding: 20px; }
+      .stats-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -199,7 +205,6 @@
       <li><a href="#uts4">UTS 4</a></li>
       <li><a href="#uts5">UTS 5</a></li>
       <li><a href="#uas1">UAS 1</a></li>
-      <li><a href="#uas2">UAS 2</a></li>
     </ul>
   </nav>
 
@@ -266,7 +271,7 @@
       </div>
     </section>
 
-    <section id="uts3" style="max-width: 800px; margin: 60px auto; padding: 40px; background-color: #f9fbff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.08);">
+    <section id="uts3">
       <div style="text-align: center; margin-bottom: 25px;">
         <h2 style="color: #003366; font-weight: 700; margin-bottom: 10px;">UTS 3 - My Stories For You</h2>
         <h4 style="color: #0056b3; font-style: italic; margin-bottom: 5px;">Memilih untuk Mulai</h4>
@@ -282,21 +287,29 @@
           Aku ingat dengan jelas malam itu, malam ketika pesan singkat masuk ke ponselku:
           <em>“Aku mau menawarkan kamu posisi di suatu acara. Mau diambil atau tidak?”</em>
         </p>
+
         <p>
           Aku menatap layar cukup lama, menatapnya dengan penuh keraguan. 
           Posisi yang ditawarkan kali ini merupakan posisi yang sebelumnya aku belum pernah coba dan cukup asing untukku.
           Ada rasa ingin mencoba, tapi juga takut gagal. Aku berpikir,
           <em>“Bagaimana kalau aku tidak cukup baik? Bagaimana kalau aku membuat malu diriku sendiri?”</em>
           Aku adalah seseorang yang ingin mencoba banyak hal, tapi di saat yang sama aku bukan tipe yang berani mengambil langkah pertama.
+          Bagiku, ada orang yang memiliki kemampuan yang lebih baik untuk posisi itu dibandingkan diriku.
         </p>
+
         <p>
           Aku sempat membagikan apa yang aku rasakan ke ibuku.
           <em>“Kamu tidak akan tahu apa yang bisa kamu capai kalau terus menunggu siap.”</em>
           Kalimat itu terdengar sederhana, tapi membekas hingga sekarang.
           Kalimat sederhana itu menggerakkan diriku untuk mengiyakan tawaran di ponselku.
         </p>
+
         <p>
           Hari-hari setelahnya tidak mudah. Aku harus beradaptasi, berbicara dengan orang baru, tampil di depan banyak orang.
+          Tapi di sela rasa gugup itu, aku mulai melihat sesuatu yang belum pernah kulihat sebelumnya, ternyata aku bisa.
+          Tidak sesempurna yang kubayangkan, tapi cukup untuk membuatku ingin melangkah lagi.
+          Waktu berlalu, dan kesempatan demi kesempatan datang.
+          Dulu aku akan mundur, tapi kini aku belajar menyambutnya.
           Ternyata keberanian bukan soal hilangnya rasa takut, tapi soal memilih tetap melangkah meski takut itu masih ada.
         </p>
       </div>
@@ -304,18 +317,85 @@
 
     <section id="uts4">
       <h2 style="color: #003366; font-weight: 700; text-align: center;">UTS 4 - My SHAPE</h2>
-      <hr style="border: 1.5px solid #007BFF; margin-bottom: 25px; width: 80%; margin: 0 auto 25px auto;">
+      <hr style="border: 1.5px solid #007BFF; margin-bottom: 25px; width: 80%; margin-left: auto; margin-right: auto;">
+
       <h3 style="color: #004a99; text-align: center;">SHAPE Framework</h3>
-      
-      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #007BFF;">
-        <h4 style="color: #0056b3;">S - Spiritual Gifts / Strengths</h4>
-        <p><strong>Rasa ingin tahu yang tinggi:</strong> Aku memiliki kecenderungan alami untuk mempertanyakan 'mengapa' dan 'bagaimana' di balik segala hal.</p>
+
+      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #007BFF; text-align: justify;">
+        <h4 style="color: #0056b3;">S - Spiritual Gifts / Strengths (Karunia / Kekuatan)</h4>
+        <p><strong>Rasa ingin tahu yang tinggi:</strong> Aku memiliki kecenderungan alami untuk mempertanyakan 'mengapa' dan 'bagaimana' di balik segala hal, menjadikan proses belajar sebagai sumber energi.</p>
+        <p><strong>Kemampuan mengajar atau membimbing orang lain:</strong> Aku sangat menghargai kesempatan untuk berbagi wawasan dan menjadi katalis pemahaman bagi orang lain, menunjukkan bahwa kontribusi yang berarti tidak selalu harus yang paling terlihat.</p>
+        <p><strong>Ketelitian dalam berpikir dan bertindak:</strong> Pendekatan kerja aku didasarkan pada analisis mendalam dan ketelitian yang tinggi, memastikan hasil yang presisi dan berkualitas, bukan asal selesai.</p>
       </div>
-      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #3399ff;">
-        <h4 style="color: #0056b3;">H - Heart (Minat, Nilai)</h4>
-        <p><strong>Nilai kejujuran dan integritas:</strong> Aku berpegang teguh pada prinsip integritas dalam setiap tindakan.</p>
+
+      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #3399ff; text-align: justify;">
+        <h4 style="color: #0056b3;">H - Heart (Minat, Nilai, Kepedulian)</h4>
+        <p><strong>Nilai kejujuran dan integritas:</strong> Aku berpegang teguh pada prinsip integritas. Setiap ucapan dan tindakan didasarkan pada keyakinan personal yang mendalam, bukan untuk mencari persetujuan atau pengakuan eksternal.</p>
+        <p><strong>Nilai pertumbuhan pribadi (growth mindset):</strong> Aku percaya dengan aktif dalam pembelajaran dan pengembangan merupakan jalan untuk meningkatkan kualitas karakter dan keterampilan.</p>
+        <p><strong>Empati atau kepekaan terhadap orang lain:</strong> Aku memiliki kemampuan mendengarkan yang aktif dan empati yang kuat. Hal ini mendorongku untuk memahami perspektif orang lain dan berkontribusi secara nyata.</p>
       </div>
-      <p style="margin-top:20px;"><em>(Isi SHAPE lengkap sesuai komitmen diri Ayudia...)</em></p>
+
+      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #66b2ff; text-align: justify;">
+        <h4 style="color: #0056b3;">A - Abilities (Kemampuan Andal)</h4>
+        <p><strong>Kemampuan komunikasi publik:</strong> Aku mampu berbicara di depan banyak orang dengan memadukan kepercayaan diri, kejelasan, dan daya tarik interpersonal.</p>
+        <p><strong>Leadership / Kepemimpinan:</strong> Aku punya keahlian dalam memimpin sebuah tim kecil, membagi tugas, mengatur jadwal, dan memastikan setiap orang tahu perannya.</p>
+        <p><strong>Kemampuan adaptabilitas / fleksibilitas:</strong> Mampu beradaptasi saat situasi berubah, menghadapi tantangan baru, dan belajar cepat dari kondisi tak terduga.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #99ccff; text-align: justify;">
+        <h4 style="color: #0056b3;">P - Personality (Gaya Kerja & Kolaborasi)</h4>
+        <p><strong>Struktur:</strong> Aku suka merencanakan langkah, menyusun tugas, mengatur prioritas, serta memastikan setiap anggota tim memahami perannya.</p>
+        <p><strong>Kolaboratif dan Suportif:</strong> Aku nyaman bekerja dalam tim, mendengar pendapat orang lain, dan menciptakan suasana yang bersahabat agar ide-ide bisa muncul secara terbuka.</p>
+        <p><strong>Pembelajar Sepanjang Hayat:</strong> Aku senang mengeksplorasi berbagai topik dan terus merasa bersemangat saat belajar, menikmati setiap proses pembelajaran yang datang.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.9); padding: 20px 25px; border-radius: 12px; margin-top: 25px; box-shadow: 0 6px 14px rgba(0,0,0,0.05); border-left: 6px solid #cce5ff; text-align: justify;">
+        <h4 style="color: #0056b3;">E - Experiences (Pengalaman Pembentuk)</h4>
+        <p><strong>Organisasi:</strong> Organisasi sebagai tempat aku berkiprah memfasilitasi saya untuk memperoleh banyak pengalaman langsung.</p>
+        <p><strong>Kepanitiaan:</strong> Aku berpengalaman dalam merancang, mengorganisasi, dan melaksanakan proyek atau acara, didukung oleh keterlibatan aku dalam berbagai posisi kepanitiaan.</p>
+        <p><strong>Kegagalan:</strong> Aku pernah menghadapi kegagalan. Hal ini berfungsi sebagai titik balik, mengajarkanku untuk melihatnya bukan sebagai akhir, melainkan sebagai awal dari pembelajaran yang mendalam.</p>
+      </div>
+
+      <div style="text-align: justify; line-height: 1.8; color: #222; font-size: 16px; margin-top: 35px;">
+        <h3 style="color: #222; margin-bottom: 10px; text-align: center;">Piagam Diri (Self-Charter)</h3>
+        <p>
+          Aku berkomitmen untuk menggunakan <strong>Rasa Ingin Tahu yang Tinggi (S)</strong> dan
+          <strong>Ketelitian dalam Berpikir dan Bertindak (S)</strong> sebagai fondasi untuk belajar dan menganalisis masalah secara mendalam.
+          Dengan berpegang teguh pada nilai <strong>Kejujuran dan Integritas (H)</strong>,
+          aku mendedikasikan diri untuk berkontribusi nyata melalui
+          <strong>Kemampuan Mengajar dan Membimbing (S)</strong> serta
+          <strong>Empati terhadap Orang Lain (H)</strong>, menggunakan
+          <strong>Adaptabilitas/Fleksibilitas (A)</strong> dan semangat
+          <strong>Pembelajar Sepanjang Hayat (P)</strong> untuk menghadapi setiap perubahan dan tantangan.
+        </p>
+
+        <p>
+          Misi hidupku adalah menggunakan kemampuan <strong>Leadership/Kepemimpinan (A)</strong> dan
+          <strong>Struktur (P)</strong> untuk merancang dan menggerakkan ekosistem kolaborasi yang suportif
+          (<strong>Kolaboratif dan Suportif (P)</strong>) dan mendorong
+          <strong>Pertumbuhan Pribadi (H)</strong>.
+        </p>
+
+        <h3 style="color: #222; margin-top: 30px; margin-bottom: 10px; text-align: center;">Identitas Naratif</h3>
+        <p>
+          Ceritaku adalah tentang menjadi bagian dari <strong>Organisasi (E)</strong> dan
+          <strong>Kepanitiaan (E)</strong>, merencanakan langkah secara terstruktur
+          (<strong>Struktur (P)</strong>), dan belajar banyak hal.
+          Namun, rasa takut akan ketidaksempurnaan hasil sering membayangi,
+          menyebabkan aku terlalu fokus pada proses dan kurang berani mengambil risiko.
+        </p>
+
+        <p>
+          Ceritaku bukan lagi tentang menghindari kesalahan, ini tentang belajar dari
+          <strong>Kegagalan (E)</strong>. Aku menemukan bahwa <strong>Ketelitian</strong> dan
+          <strong>Struktur</strong> adalah alat, bukan borgol, yang memampukanku untuk memimpin tim kecil
+          dengan efektif (<strong>Leadership (A)</strong>) dan beradaptasi saat situasi berubah.
+          Pengalaman dalam <strong>Organisasi (E)</strong> dan <strong>Kepanitiaan (E)</strong> mengajarkanku bahwa
+          <strong>Rasa Ingin Tahu (S)</strong> yang dipadukan dengan <strong>Empati (H)</strong>
+          menciptakan dampak yang berarti. Aku adalah seorang pembelajar sepanjang hayat yang tidak hanya mencari
+          jawaban, tetapi juga menjadi katalisator bagi pemahaman orang lain.
+        </p>
+      </div>
     </section>
 
     <section id="uts5">
@@ -327,54 +407,38 @@
     </section>
 
     <section id="uas1">
-      <h2>💡 UAS 1 - My Concepts</h2>
-      <span class="uas-subtitle">Kesehatan Global: Tantangan & Realita</span>
-      
-      <h3>Analisis Masalah Kesehatan Global</h3>
-      <p>
-        Kesehatan global adalah isu yang melintasi batas negara. Fokus utamanya adalah mencapai kesetaraan kesehatan bagi semua orang di dunia. Tantangannya meliputi penyakit menular, perubahan iklim, hingga akses ekonomi yang tidak merata.
-      </p>
+        <h2>💡 UAS 1 - My Concepts</h2>
+        <span class="uas-subtitle">Masalah Kesehatan Global</span>
 
-      <div class="stats-grid">
-        <div class="stat-box">
-          <h4>4,5 Miliar</h4>
-          <p>Orang di dunia yang belum tercover layanan kesehatan dasar secara esensial pada tahun 2021.</p>
+        <h3>My Masterpiece: Memahami Masalah Kesehatan Global</h3>
+        <p>
+            Masalah kesehatan global mencakup berbagai tantangan kesehatan yang memengaruhi populasi di banyak negara, termasuk penyakit menular (seperti COVID-19, HIV/AIDS, malaria, TBC), penyakit tidak menular (jantung, diabetes, kanker), kesehatan ibu-anak, serta akses layanan kesehatan. Salah satu aspek krusial adalah akses terhadap layanan kesehatan, di mana banyak negara berkembang masih memiliki fasilitas dan tenaga medis yang terbatas. Selain itu, biaya kesehatan yang tinggi dapat membuat keluarga jatuh miskin, dan tantangan ini diperburuk oleh faktor perubahan iklim, konflik, serta ketimpangan ekonomi.
+        </p>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h4>4,5 Miliar Orang</h4>
+                <p>Sekitar 50% penduduk bumi belum terlayani oleh layanan kesehatan dasar secara penuh hingga tahun 2021.</p>
+            </div>
+            <div class="stat-box">
+                <h4>2 Miliar Orang</h4>
+                <p>Menghadapi beban finansial karena biaya kesehatan yang mendorong ratusan juta orang ke jurang kemiskinan setiap tahun.</p>
+            </div>
+            <div class="stat-box">
+                <h4>38 Juta Orang</h4>
+                <p>Jumlah penderita HIV/AIDS secara global yang memerlukan akses merata terhadap terapi antiretroviral.</p>
+            </div>
         </div>
-        <div class="stat-box">
-          <h4>2 Miliar</h4>
-          <p>Orang mengalami kesulitan finansial (biaya katastrofik) untuk membayar layanan kesehatan.</p>
+
+        <div class="info-box">
+            <p>📌 <strong>Sumber Data</strong></p>
+            <p>Statistik cakupan layanan kesehatan berasal dari <em>Tracking Universal Health Coverage: 2023 Global Monitoring Report</em> oleh WHO dan World Bank. Data ini menekankan perlunya percepatan target SDG 3.8 mengenai Universal Health Coverage (UHC).</p>
         </div>
-      </div>
 
-      <div style="background: #f1f4f8; padding: 20px; border-radius: 10px; margin-top: 10px;">
-        <p><strong>Poin Kunci:</strong> Ketimpangan akses bukan hanya soal medis, tapi soal sistem ekonomi dan keadilan sosial yang harus diperbaiki secara global.</p>
-      </div>
-    </section>
-
-    <section id="uas2">
-      <h2>📢 UAS 2 - My Opinions</h2>
-      <span class="uas-subtitle">Refleksi & Pandangan Strategis</span>
-
-      <p>Berdasarkan data dan pengalaman belajar saya, berikut adalah opini saya mengenai cara menangani krisis kesehatan global:</p>
-
-      <div class="opinion-card">
-        <h5>1. Investasi pada Sistem Primer</h5>
-        <p>Menurut saya, dunia terlalu fokus pada penyembuhan penyakit berat (kuratif) dan kurang berinvestasi pada pencegahan (preventif) di tingkat puskesmas atau layanan primer.</p>
-      </div>
-
-      <div class="opinion-card">
-        <h5>2. Teknologi untuk Keadilan</h5>
-        <p>Teknologi medis jangan hanya dinikmati negara maju. Saya berpendapat bahwa transfer teknologi vaksin dan obat-obatan esensial harus menjadi kewajiban moral global.</p>
-      </div>
-
-      <div class="opinion-card">
-        <h5>3. Kolaborasi Antar-Sektor</h5>
-        <p>Kesehatan tidak bisa berdiri sendiri. Sebagai mahasiswa Teknik Pangan, saya melihat ketahanan pangan sangat erat kaitannya dengan gizi dan kesehatan masyarakat global.</p>
-      </div>
-
-      <p style="font-style: italic; color: #555; text-align: center; margin-top: 25px;">
-        "Kesehatan adalah hak asasi, bukan hak istimewa bagi mereka yang mampu."
-      </p>
+        <div class="info-box" style="background: #fff8e1; border-left: 5px solid #ffc107;">
+            <p>✨ <strong>Kesimpulan Konsep</strong></p>
+            <p>Masalah kesehatan global tidak hanya berdampak pada angka harapan hidup, tetapi juga pada produktivitas ekonomi dan stabilitas sosial suatu negara. Memahami konsep ini membantu kita melihat arah solusi mulai dari perlindungan sosial hingga investasi sistem kesehatan primer.</p>
+        </div>
     </section>
 
   </main>
