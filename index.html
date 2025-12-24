@@ -6,8 +6,12 @@
   <title>Ayudia Nisrina Tsabitah - II2100</title>
 
   <style>
-    /* === Reset & Font === */
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background: linear-gradient(180deg, #e6f0ff 0%, #ffffff 100%);
@@ -15,7 +19,7 @@
       line-height: 1.7;
     }
 
-    /* === Navigation Bar === */
+    /* === NAVBAR === */
     nav {
       background: #0a2e5c;
       color: #fff;
@@ -23,35 +27,37 @@
       justify-content: space-between;
       align-items: center;
       padding: 14px 40px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
     }
 
     nav h1 {
-      font-size: 20px;
-      letter-spacing: 0.5px;
+      font-size: 18px;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
     }
 
     nav a:hover {
-      color: #ffd966;
+      background: #ffd966;
+      color: #0a2e5c;
     }
 
-    /* === Header === */
+    /* === HEADER === */
     header {
       text-align: center;
       padding: 60px 20px 40px;
@@ -60,15 +66,13 @@
     header h2 {
       font-size: 32px;
       color: #0a2e5c;
-      margin-bottom: 8px;
     }
 
     header p {
       color: #555;
-      font-size: 16px;
     }
 
-    /* === Content === */
+    /* === MAIN CONTENT === */
     main {
       max-width: 900px;
       margin: auto;
@@ -79,14 +83,14 @@
       background: #fff;
       border-radius: 12px;
       padding: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-      text-align: justify;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     section:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     section h2 {
@@ -94,125 +98,61 @@
       border-bottom: 3px solid #c9defd;
       padding-bottom: 6px;
       margin-bottom: 15px;
-      font-size: 22px;
     }
 
-    section h3 {
-      color: #004a99;
-      font-size: 18px;
-      margin-top: 15px;
-      margin-bottom: 10px;
-    }
-
-    section h4 {
-      color: #333;
-      font-weight: 600;
-      margin-top: 12px;
-      margin-bottom: 8px;
-    }
-
-    section p {
-      color: #444;
-      margin-bottom: 15px;
-    }
-
-    /* === UAS 1 Specific Styles === */
     .uas-subtitle {
-      color: #888;
-      font-size: 1.1rem;
-      margin-top: -10px;
-      margin-bottom: 25px;
+      color: #777;
+      font-size: 1rem;
+      margin-bottom: 20px;
       display: block;
     }
 
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin: 25px 0;
-    }
-
-    .stat-box {
-      background: #f8f9fa;
-      border: 1px solid #e9ecef;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: left;
-    }
-
-    .stat-box h4 {
-      color: #1a2a44;
-      font-size: 1.3rem;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .stat-box p {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 0;
-    }
-
-    .info-box {
-      background: #f1f4f8;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    .info-box p {
-      font-size: 0.95rem;
-      margin-bottom: 0;
-    }
-
-    /* === Section Variasi Warna === */
-    #uts3, #uts4 {
-      background: #f9fbff;
-    }
-
-    #uts4 {
-      background: linear-gradient(135deg, #eaf3ff 0%, #ffffff 100%);
-    }
-
-    /* === Footer === */
+    /* === FOOTER === */
     footer {
       text-align: center;
       padding: 25px;
       color: #666;
-      font-size: 0.9em;
       border-top: 1px solid #ddd;
       margin-top: 40px;
     }
 
-    /* === Responsive === */
-    @media (max-width: 700px) {
-      nav { flex-direction: column; text-align: center; padding: 20px; }
-      nav ul { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px; }
-      header h2 { font-size: 26px; }
-      section { padding: 20px; }
-      .stats-grid { grid-template-columns: 1fr; }
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav ul {
+        justify-content: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <nav>
-    <h1>Ayudia Nisrina Tsabitah</h1>
-    <ul>
-      <li><a href="#uts1">UTS 1</a></li>
-      <li><a href="#uts2">UTS 2</a></li>
-      <li><a href="#uts3">UTS 3</a></li>
-      <li><a href="#uts4">UTS 4</a></li>
-      <li><a href="#uts5">UTS 5</a></li>
-      <li><a href="#uas1">UAS 1</a></li>
-    </ul>
-  </nav>
+<!-- ================= NAVBAR ================= -->
+<nav>
+  <h1>Ayudia Nisrina Tsabitah</h1>
+  <ul>
+    <li><a href="#uts1">UTS 1</a></li>
+    <li><a href="#uts2">UTS 2</a></li>
+    <li><a href="#uts3">UTS 3</a></li>
+    <li><a href="#uts4">UTS 4</a></li>
+    <li><a href="#uts5">UTS 5</a></li>
+    <li><a href="#uas1">UAS 1</a></li>
+    <li><a href="#uas2">UAS 2</a></li>
+    <li><a href="#uas3">UAS 3</a></li>
+    <li><a href="#uas4">UAS 4</a></li>
+    <li><a href="#uas5">UAS 5</a></li>
+  </ul>
+</nav>
 
-  <header>
-    <h2>Ayudia Nisrina Tsabitah</h2>
-    <p>K1 - NIM 14324016</p>
-    <p>Tugas II2100 Komunikasi Interpersonal dan Publik.</p>
-  </header>
+<header>
+  <h2>Ayudia Nisrina Tsabitah</h2>
+  <p>K1 - NIM 14324016</p>
+  <p>Tugas II2100 Komunikasi Interpersonal dan Publik</p>
+</header>
 
   <main>
     <section id="uts1">
